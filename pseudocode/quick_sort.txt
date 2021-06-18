@@ -1,0 +1,74 @@
+Programa QuickSort;
+  # Declarando una funcion recursiva que sera el encargado de 
+  # ordenar el arreglo
+  Funcion sort(arreglo[entero], entero inicio, entero fin):
+    # Declarando las variables que seran usadas en la funcion
+    Definir pivote como entero;
+    Definir i como entero;
+    Definir j como entero;
+    Definir valorEnLaPosicionI como entero;
+    Definir valorEnLaPosicionJ como entero;
+    Definir posicionPivote como entero;
+
+    # Verificando que el arreglo contenga mas de un elemento para poder ser 
+    # ordenado y retornar el arreglo ordenado, de lo contrario, un arreglo 
+    # de 1 elemento se puede considerar ordenado, entonces se retornara 
+    # ese arreglo
+    Si inicio < fin Entonces:
+      # Asignando el valor del primer elemento del arreglo a la variable pivote,
+      # la cual sera usada posteriormente para comparar los demas elementos 
+      # del arreglo
+      pivote = arreglo[inicio];
+
+      # El valor de la variable i sera el valor de inicio mas 1 para obviar al pivote
+      i = inicio + 1;
+
+      # Empezamos a comparar todos los elementos del arreglo a partir de la posicion
+      # j hasta el final;
+      Para j = i Hasta fin:
+        # Si el elemento en la posicion j del arreglo es menor que el pivote 
+        # entonces se intercambiaran los valores de los elementos en las 
+        # posiciones i y j de el arreglo, y luego de eso se le aumentara 1 
+        # a el valor de i
+        Si arreglo[j] < pivote Entonces:
+          valorEnLaPosicionJ = arr[j];
+          valorEnLaPosicionI = arr[i];
+          arr[i] = valorEnLaPosicionJ;
+          arr[j] = valorEnLaPosicionI;
+          i = i + 1;
+        Fin Si;
+      Fin Para;
+
+      # Se coloca el pivote en la mitad (o casi mitad) del arreglo
+      arreglo[inicio] = arreglo[i - 1];
+      arreglo[i - 1] = pivote;
+
+      posicionPivote = i - 1;
+
+      # Se realiza la recursion; se ordenan los numeros que se encuentran a la
+      # izquierda del pivote y los que se encuentran a la derecha del pivote 
+      # por separado
+      sort(arr, inicio, posicion_pivote - 1);
+      sort(arr, posicion_pivote + 1, fin);
+    Fin Si;
+  Fin Funcion;
+
+  INICIO:
+    # Declaracion de las variables que seran usadas en el programa 
+    Definir arreglo como arreglo de 8 enteros;
+
+    # Asignacion de los valores al arreglo
+    arreglo[0] = 140;
+    arreglo[1] = 10;
+    arreglo[2] = 5;
+    arreglo[3] = 9;
+    arreglo[4] = 16;
+    arreglo[5] = 8;
+    arreglo[6] = 0;
+    arreglo[7] = 1;
+    arreglo[8] = 22;
+
+    sort(arreglo);
+    # Ahora los elementos del arreglo estan ordenados de menor a mayor
+  FIN;
+Fin Programa;

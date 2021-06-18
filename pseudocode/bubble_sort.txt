@@ -1,0 +1,46 @@
+Programa Bubble_Sort;
+  # Iniciando el programa
+  INICIO:
+    # Declarando las variables que seran usadas en el programa
+    Definir arreglo como entero;
+    Definir x como entero;
+    Definir indice como entero;
+    Definir actualNumero como entero;
+    Definir siguienteNumero como entero;
+    Dimension arreglo[8];
+
+    # Asignando los valores iniciales a cada posicion del arreglo
+    arreglo[0] = 25;
+    arreglo[1] = 57;
+    arreglo[2] = 48;
+    arreglo[3] = 37;
+    arreglo[4] = 12;
+    arreglo[5] = 92;
+    arreglo[6] = 86;
+    arreglo[7] = 33;
+
+    # Ciclo que sera repetido 7 veces debido a que necesitamos que se realice 
+    # el ciclo de abajo un numero menor por uno a la longitud del arreglo
+    Para x = 0 Hasta 6 Hacer:
+      # Ciclo que sera repetido 7 veces para recorrer el arreglo entero
+      Para indice = 0 Hasta 6 Hacer:
+        # Asignando el valor de la posicion actual del arreglo que se esta 
+        # recorriendo en la variable actualNumero
+        actualNumero = arreglo[indice];
+        # Asignando el valor de la posicion siguiente a la actual del arreglo
+        # que se esta recorriendo en la variable siguienteNumero
+        siguienteNumero = arreglo[indice + 1];
+
+        # Verificando si el numero actual es mayor al siguiente, en caso verdadero,
+        # intercambiaran posiciones, en caso falso, el arreglo no sufrira
+        # ningun cambio
+        Si (actualNumero > siguienteNumero):
+          arreglo[indice] = siguienteNumero;
+          arreglo[indice + 1] = actualNumero;
+        Fin Si;
+      Fin Para;
+    Fin Para;
+    # Al finalizar el programa ya el arreglo quedara ordenado y lucira asi:
+    # [12, 25, 33, 37, 48, 57, 86, 92]
+  FIN;
+Fin Programa;
