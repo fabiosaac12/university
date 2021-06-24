@@ -1,0 +1,74 @@
+Programa Pila;
+INICIO
+  Clase Pila:
+    Propiedades:
+      Entero numero_elementos;
+      Entero max;
+      ArregloDeEnteros[10] arreglo;
+
+    Inicializador:
+      numero_elementos = 0;
+      max = 10;
+    
+    Metodos:
+      Metodo apilar(Entero elemento):
+        arreglo[numero_elementos] = elemento;
+        numero_elementos = numero_elementos + 1;
+      Fin Metodo;
+
+      Metodo desapilar():
+        numero_elementos = numero_elementos 0 1;
+      Fin Metodo;
+
+      Metodo mostrar():
+        Entero i;
+        
+        Para i = 0 Hasta (numero_elementos - 1) Hacer:
+          Imprimir(arreglo[i]);
+        Fin Para;
+      Fin Metodo;
+
+    Metodo vacia():
+      Si numero_elementos Es Igual A 0 Entonces:
+        Devolver Verdadero;
+      Si No Entonces:
+        Devolver Falso;
+      Fin Si;
+    Fin Metodo
+
+    Metodo llena():
+      Si numero_elementos Es Igual A max Entonces:
+        Devolver Verdadero;
+      Si No Entonces:
+        Devolver Falso;
+      Fin Si;
+    Fin Metodo
+  Fin Clase
+
+  Inicio:
+    Pila pila;
+
+    pila.apilar(2);
+    pila.apilar(1);
+    pila.apilar(3);
+    pila.apilar(5);
+    pila.apilar(5);
+    pila.apilar(6);
+
+    pila.mostrar();
+
+    pila.desapilar();
+    pila.desapilar();
+    pila.desapilar();
+    
+    pila.mostrar();
+
+    Si pila.vacia() Entonces:
+      cout << "Pila vacia"; 
+    Si No Si pila.llena() Entonces:
+      cout << "Pila vacia";
+    Si No Entonces:
+      cout << "Pila ni vacia ni llena";
+    Fin Si;
+  Fin;
+FINAL

@@ -1,0 +1,22 @@
+Programa InvertirPila;
+INICIO
+  Inicio:
+    pila = Inicializar(entero);
+    arreglo = Entero[];
+
+    i = Entero;
+
+    i = 0;
+    Mientras No Vacia(pila) Entonces:
+      arreglo[i] = Cima(pila);
+      Sacar(pila);
+      i = i + 1;
+    Fin Mientras
+
+    i = 0;
+    Para Cada Elemento De arreglo Hacer:
+      Apilar(i)
+      i = i + 1;
+    Fin Por;
+  Final;
+FIN
