@@ -1,0 +1,111 @@
+#howWork {
+  height: 120vh;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25vh;
+  background-color: #15579e;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#howWork .caption {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+}
+
+#howWork .description {
+  color: white;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#howWork .numbersContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 80px;
+}
+
+#howWork .numbersContainer .arrowContainer {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+}
+
+#howWork .numbersContainer .arrowContainer:first-child,
+#howWork .numbersContainer .arrowContainer:last-child {
+  flex-grow: 1;
+}
+
+#howWork .numbersContainer .arrowContainer .bar {
+  flex: 1;
+  background-color: white;
+  height: 5px;
+}
+
+#howWork .numbersContainer .arrowContainer:first-child .bar,
+#howWork .numbersContainer .arrowContainer:last-child .bar {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#howWork .numbersContainer .arrowContainer .arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+  transform: rotate(-45deg);
+  transform: translateX(-23px) rotate(-45deg);
+}
+
+#howWork .numbersContainer .arrowContainer:first-child .arrow,
+#howWork .numbersContainer .arrowContainer:last-child .arrow {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+#howWork .numbersContainer .number {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  margin-right: 28px;
+  margin-left: 5px;
+}
+
+#howWork .steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#howWork .steps .step {
+  width: 300px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 32px;
+}
+
+#howWork .steps .step:nth-child(3) {
+  width: 300px;
+  font-weight: 300;
+  text-align: center;
+  margin-right: 20px;
+}

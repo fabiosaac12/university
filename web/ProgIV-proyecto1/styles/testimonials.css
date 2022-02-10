@@ -1,0 +1,63 @@
+#testimonials {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+#testimonials .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonials .header > * {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+#testimonials .header > .caption {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #00ca4e;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+#testimonials .header > .title {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+#testimonials .cardsContainer {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 48px;
+}
+
+#testimonials .cardsContainer > .card {
+  background: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 42px;
+  width: 318px;
+  height: 376px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#testimonials .cardsContainer > .card > .quote {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+#testimonials .cardsContainer > .card > .caption {
+  line-height: 28px;
+  font-weight: 600;
+  font-size: 16px;
+}

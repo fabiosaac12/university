@@ -1,0 +1,20 @@
+#welcome {
+  height: 155vh;
+  padding-bottom: 55vh;
+  background-color: #f5f9ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#welcome > div > .description {
+  font-size: 58px;
+  font-weight: 900;
+  width: 80%;
+  white-space: nowrap;
+}
+
+#welcome .rocket {
+  transform: translateX(70px);
+}

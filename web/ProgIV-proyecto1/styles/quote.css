@@ -1,0 +1,65 @@
+#quote {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  box-shadow: 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 52px 52px;
+  left: 50%;
+  width: 1200px;
+  max-width: calc(100vw - 300px);
+  height: 560px;
+  max-height: 75vh;
+  z-index: 900;
+  transform: translateX(-50%) translateY(90vh);
+  padding: 55px;
+}
+
+#quote .introduction {
+  width: 50%;
+  padding-right: 40px;
+}
+
+#quote .introduction .title {
+  background: linear-gradient(90deg, #15579e 0%, #00ca4e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#quote .introduction .subtitle {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+#quote .introduction .description {
+  font-size: 20px;
+  margin-top: 60px;
+  line-height: 32px;
+}
+
+#quote .form {
+  width: 50%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#quote .form .label {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#quote .form .sendButton {
+  background: linear-gradient(90deg, #15579e 0%, #00ca4e 100%);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  border: 0;
+  height: 58px;
+  width: 334px;
+  align-self: center;
+  cursor: pointer;
+}
